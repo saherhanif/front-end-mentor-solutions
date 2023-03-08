@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend Deca");
+
+body{
+  background-color: hsl(233, 47%, 7%);
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  color: aliceblue;
+  font-family: 'Inter';
+}
+main{
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  align-items: center;
+  width: 150vh;
+  border-radius: 10px;
+}
+main .mainImage{
+  height: 100%;
+  background-color: hsl(277, 92%, 47%);
+  border-radius: 0 10px 10px 0;
+}
+main .mainImage img{
+  width: 75vh;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  opacity: .7;
+
+}
+
+main .maintext{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vh;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+
+.maintext p{
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.maintext h1 span{
+  color: hsl(277, 64%, 61%);
+}
+
+.maintext .stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7vh;
+  margin-right: 5vh;
+  
+}
+
+.stats .stat{
+  line-height: 3px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.stats .stat h6{
+   color: hsla(0, 0%, 100%, 0.6);
+   font-family: 'Lexend Deca';
+  
+}
+

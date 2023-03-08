@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background: hsl(0, 0%, 100%);
+        height: 100vh;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    body, .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        max-width: 720px;
+        box-shadow: 5px 15px 20px hsl(221, 100%, 96%);
+        border-radius: 25px;
+    }
+    
+    p {
+        margin: 16px 0;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+        margin: 18px;
+        width: 100%;
+    }
+    #final-score {
+        width: 50%;
+        padding: 20px 40px 30px;
+        background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 25px;
+        flex-direction: column;
+        color: hsla(241, 100%, 89%, 0.8);
+        text-align: center;
+    }
+    
+    
+    #grade-circle {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        border-radius: 100px;
+        flex-direction: column;
+    }
+    
+    .grade {
+        color: hsl(0, 0%, 100%);
+        font-size: 1.75em;
+    }
+    
+    span.grade {
+        font-size: 3.5em;
+    }
+    
+    #scoreSum {
+        width: 50%;
+        padding: 20px 40px;
+        flex-direction: column;
+        color: hsl(223, 10%, 61%);
+    }
+    
+    #scoreSum {
+        margin-bottom: 21px;
+    }
+    
+    #scoreSum h1, .summaryItem span {
+        color: hsl(224, 30%, 27%);
+    }
+    
+    .summaryItem {
+        height: 50px;
+        margin: 8px 0;
+        padding: 10px;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 10px;
+        background-color: blue;
+    }
+    
+    .summaryItem img, .summaryItem p {
+        display: inline;
+    }
+    
+    #reaction-box {
+        background-color: hsla(0, 100%, 67%, 0.05);
+    }
+    
+    #reaction {
+        color: hsla(0, 100%, 67%, 0.8);
+    }
+    
+    #memory-box {
+        background-color: hsla(39, 100%, 56%, 0.05);
+    }
+    
+    #memory {
+        color: hsla(39, 100%, 56%, 0.8);
+    }
+    
+    #verbal-box {
+        background-color: hsla(166, 100%, 37%, 0.05);
+    }
+    
+    #verbal {
+        color: hsla(166, 100%, 37%, 0.8);
+    }
+    
+    #visual-box {
+        background-color: hsla(234, 85%, 45%, 0.05);
+    }
+    
+    #visual {
+        color: hsla(234, 85%, 45%, 0.8);
+    }
+    
+    .summaryItem img {
+        margin-bottom: -4px;
+    }
+    
+    #scoreSum button {
+        width: 100%;
+        height: 50px;
+        margin: 30px 0 20px;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(221, 100%, 96%);
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    #scoreSum button:hover {
+        background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+    
+    @media (max-width: 600px) {
+        body {
+            font-size: 16px;
+        }
+        
+        main {
+            flex-direction: column;
+            margin-top: auto;
+            border-radius: 0;
+        }
+    
+        #final-score {
+            border-radius: 0 0 25px 25px;
+        }
+    
+        #final-score, #scoreSum {
+            width: 100%
+        }
+    
+        #grade-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <main class="flex">
+        <div id="final-score" class="flex">
+            <h1 class="title">Your Result</h1>
+            <p id="grade-circle" class="flex"><span class="grade">76</span>of 100</p>
+            <p class="grade">Great</p>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div id="scoreSum" class="flex">
+            <h1 class="title">Summary</h1>
+            <div id="reaction-box" class="summaryItem flex">
+                <div id="reaction">
+                    <img src="./assets/images/icon-reaction.svg" aria-hidden="true">
+                    <p>Reaction</p>
+                </div>
+                <p><span>80</span> / 100</p>
+            </div>
+            <div id="memory-box" class="summaryItem flex">
+                <div id="memory">
+                    <img src="./assets/images/icon-memory.svg" aria-hidden="true">
+                    <p>Memory</p>
+                </div>
+                <p><span>92</span> / 100</p>
+            </div>
+            <div id="verbal-box" class="summaryItem flex">
+                <div id="verbal">
+                    <img src="./assets/images/icon-verbal.svg" aria-hidden="true">
+                    <p>Verbal</p>
+                </div>
+                <p><span>61</span> / 100</p>
+            </div>
+            <div id="visual-box" class="summaryItem flex">
+                <div id="visual">
+                    <img src="./assets/images/icon-visual.svg" aria-hidden="true">
+                    <p>Visual</p>
+                </div>
+                <p><span>72</span> / 100</p>
+            </div>
+            <button type="button">Continue</button>
+        </div>
+    </main>
+  
+</body>
+</html>
