@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap");
+
+      body {
+        background-color: hsl(217, 54%, 11%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        font-family: 'Outfit';
+      }
+
+      h2 {
+        color: hsl(0, 0%, 100%);
+      }
+
+      p {
+        font-size: 18px;
+        color: hsl(215, 51%, 70%);
+        opacity: .6;
+      }
+
+      hr{
+        width: 230px;
+        height: .5px;
+        color: hsl(215, 51%, 70%);
+        border: 0.01px solid hsl(215, 51%, 70%);
+        opacity: .2;
+      }
+
+      .container {
+        width: 300px;
+        padding: 20px;
+        background-color: hsl(216, 50%, 16%);
+        
+        display: inline-block;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        border-radius: 15px;
+      }
+
+      .container img {
+        width: 300px;
+        border-radius: 10px;
+        align-items: center;
+        
+        
+      }
+
+      .priceAndDays {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .priceAndDays h3{
+        font-size: 15px;
+      }
+
+      .priceAndDays .days{
+        color: hsl(215, 51%, 70%);
+        opacity: .8;
+
+
+      }
+
+      .priceAndDays .price{
+        color: hsl(178, 100%, 50%);
+        opacity: .8;
+
+      }
+
+      .creater img{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .creater{
+        color: hsl(215, 51%, 70%);
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+      
+
+
+      }
+
+      .creater h3{
+        font-size: 15px;
+        opacity: .6;
+      }
+
+      .creater span{
+        color: hsl(0, 0%, 100%);
+        margin-left:7px ;
+        opacity: .8;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/image-equilibrium.jpg" alt="equilibrium" />
+
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="priceAndDays">
+        <h3 class="price"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg> 0.041 ETH</h3>
+        <h3 class="days"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg> 3 days left</h3>
+      </div>
+      <hr style="width:100%;text-align:left;margin-left:0">
+
+      <div class="creater"><img  src="images/image-avatar.png" alt="avatar"/><h3>Creation of </h3><span> Jules Wyvern</span></div>
+    </div>
+  </body>
+</html>
