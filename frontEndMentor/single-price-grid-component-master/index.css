@@ -1,0 +1,65 @@
+body{
+  background-color: grey;
+}
+
+
+.container {
+  width:60%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  border-radius: 20px;
+  margin-top: 5%;
+ /* box-shadow: 2px 2px 2px 2px black ; */
+}
+
+.upperHalf {
+  background-color: white;
+  padding: 50px;
+  height: 50%;
+  display: grid;
+  margin-bottom: 50px;
+  
+}
+
+.lowerHalf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  
+}
+
+.leftLowerHalf {
+  background-color: hsl(179, 62%, 43%);
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  display: grid;
+  
+
+}
+
+.leftLowerHalf .price{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leftLowerHalf .price h1{
+  margin-right: 20px;
+}
+
+.rightLowerHalf {
+  background-color: hsl(179, 76%, 54%);
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  display: grid;
+
+}
